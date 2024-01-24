@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import getFormattedDate from '../../lib/getFormattedDate'; 
 
-export default function ListItem({ post }) {
+export default function ListItem({ post ={} }) {
   const { title, date, id } = post;
   const formattedDate = getFormattedDate(date);
 
